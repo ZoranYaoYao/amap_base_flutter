@@ -234,19 +234,19 @@ object GetCenterLnglat : MapMethodHandler {
     }
 }
 
-object OpenOfflineManager : MapMethodHandler {
-
-    override fun with(map: AMap): MapMethodHandler {
-        return this
-    }
-
-    override fun onMethodCall(p0: MethodCall?, p1: MethodChannel.Result?) {
-        registrar.activity().startActivity(
-                Intent(AMapBaseMapPlugin.registrar.activity(),
-                        OfflineMapActivity::class.java)
-        )
-    }
-}
+//object OpenOfflineManager : MapMethodHandler {
+//
+//    override fun with(map: AMap): MapMethodHandler {
+//        return this
+//    }
+//
+//    override fun onMethodCall(p0: MethodCall?, p1: MethodChannel.Result?) {
+//        registrar.activity().startActivity(
+//                Intent(AMapBaseMapPlugin.registrar.activity(),
+//                        OfflineMapActivity::class.java)
+//        )
+//    }
+//}
 
 object SetCustomMapStyleID : MapMethodHandler {
     private lateinit var map: AMap

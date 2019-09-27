@@ -20,7 +20,7 @@ val MAP_METHOD_HANDLER: Map<String, MapMethodHandler> = mapOf(
         "map#setMapStatusLimits" to SetMapStatusLimits,
         "tool#convertCoordinate" to ConvertCoordinate,
         "tool#calcDistance" to CalcDistance,
-        "offline#openOfflineManager" to OpenOfflineManager,
+//        "offline#openOfflineManager" to OpenOfflineManager,
         "map#addPolyline" to AddPolyline,
         "map#zoomToSpan" to ZoomToSpan,
         "map#screenshot" to ScreenShot,

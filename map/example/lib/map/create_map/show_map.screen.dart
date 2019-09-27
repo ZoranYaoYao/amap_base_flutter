@@ -215,27 +215,27 @@ class _ShowMapScreenState extends State<ShowMapScreen> {
     bool enablePulseAnnimation,
     String image,
   }) async {
-    if (await Permissions().requestPermission()) {
-      _myLocationStyle = _myLocationStyle.copyWith(
-        myLocationIcon: myLocationIcon,
-        anchorU: anchorU,
-        anchorV: anchorV,
-        radiusFillColor: radiusFillColor,
-        strokeColor: strokeColor,
-        strokeWidth: strokeWidth,
-        myLocationType: myLocationType,
-        interval: interval,
-        showMyLocation: showMyLocation,
-        showsAccuracyRing: showsAccuracyRing,
-        showsHeadingIndicator: showsHeadingIndicator,
-        locationDotBgColor: locationDotBgColor,
-        locationDotFillColor: locationDotFillColor,
-        enablePulseAnimation: enablePulseAnnimation,
-      );
-      _controller.setMyLocationStyle(_myLocationStyle);
-    } else {
-      showError(context, '权限不足');
-    }
+//    if (await Permissions().requestPermission()) {
+//      _myLocationStyle = _myLocationStyle.copyWith(
+//        myLocationIcon: myLocationIcon,
+//        anchorU: anchorU,
+//        anchorV: anchorV,
+//        radiusFillColor: radiusFillColor,
+//        strokeColor: strokeColor,
+//        strokeWidth: strokeWidth,
+//        myLocationType: myLocationType,
+//        interval: interval,
+//        showMyLocation: showMyLocation,
+//        showsAccuracyRing: showsAccuracyRing,
+//        showsHeadingIndicator: showsHeadingIndicator,
+//        locationDotBgColor: locationDotBgColor,
+//        locationDotFillColor: locationDotFillColor,
+//        enablePulseAnimation: enablePulseAnnimation,
+//      );
+//      _controller.setMyLocationStyle(_myLocationStyle);
+//    } else {
+//      showError(context, '权限不足');
+//    }
   }
 
   @override
